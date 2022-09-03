@@ -239,3 +239,20 @@ customer.customer_id=payment.customer_id;
 SELECT  rental_id, first_name,last_name FROM customer
 INNER JOIN rental ON 
 customer.customer_id = rental.customer_id;
+-------------------------------------------------------
+ÖDEV 10
+
+1)
+select city.city, country.country from city
+left join country 
+on country.country_id = city.country_id
+
+2)
+select customer.first_name, customer.last_name, payment.payment_id from payment  
+right join   customer 
+on customer.customer_id = payment.customer_id
+
+3)
+select rental.rental_id,customer.first_name,customer.last_name from rental 
+full join customer 
+on  rental.customer_id =  customer.customer_id
