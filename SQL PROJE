@@ -256,3 +256,23 @@ on customer.customer_id = payment.customer_id
 select rental.rental_id,customer.first_name,customer.last_name from rental 
 full join customer 
 on  rental.customer_id =  customer.customer_id
+-------------------------------------------------------------
+ÖDEV 11
+
+1)
+
+(SELECT FIRST_NAME FROM ACTOR)
+UNION ALL
+(SELECT FIRST_NAME FROM CUSTOMER )
+
+2)
+
+(SELECT FIRST_NAME FROM ACTOR)
+INTERSECT
+(SELECT FIRST_NAME FROM CUSTOMER )
+
+3)
+
+(SELECT FIRST_NAME FROM ACTOR)
+EXCEPT
+(SELECT FIRST_NAME FROM CUSTOMER )
